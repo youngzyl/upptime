@@ -1,5 +1,5 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
+owner: youngzyl # Your GitHub organization or username, where this repository lives
 repo: upptime # The name of this repository
 
 sites:
@@ -9,8 +9,24 @@ sites:
     url: https://en.wikipedia.org
   - name: Hacker News
     url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: home_page
+    url: $my_home_page
+  - name: BwgCA_443
+    check: "tcp-ping"
+    url: $my_bwg_ca
+    port: 443
+  - name: CoalcloudHK_443
+    check: "tcp-ping"
+    url: $my_coalcloud_hk
+    port: 443
+  - name: BwgCA
+    url: $my_bwg_ca
+  - name: CloudconeCA
+    url: $my_cloudcone_ca
+  - name: OracleTokyo
+    url: $my_oracle_tokyo
+  - name: CoalcloudHK
+    url: $my_coalcloud_hk
   - name: IPv6 test
     url: forwardemail.net
     port: 80
@@ -20,8 +36,8 @@ sites:
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  # cname: demo.upptime.js.org
+  baseUrl: /$REPO
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
