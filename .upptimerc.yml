@@ -10,23 +10,23 @@ sites:
   - name: Hacker News
     url: https://news.ycombinator.com
   - name: home_page
-    url: $my_home_page
+    url: $MY_HOME_PAGE
   - name: BwgCA_443
     check: "tcp-ping"
-    url: $my_bwg_ca
+    url: $MY_BWG_CA
     port: 443
   - name: CoalcloudHK_443
     check: "tcp-ping"
-    url: $my_coalcloud_hk
+    url: $MY_COALCLOUD_HK
     port: 443
   - name: BwgCA
-    url: $my_bwg_ca
+    url: $MY_BWG_CA
   - name: CloudconeCA
-    url: $my_cloudcone_ca
+    url: $MY_CLOUDCONE_CA
   - name: OracleTokyo
-    url: $my_oracle_tokyo
+    url: $MY_ORACLE_TOKYO
   - name: CoalcloudHK
-    url: $my_coalcloud_hk
+    url: $MY_COALCLOUD_HK
   - name: IPv6 test
     url: forwardemail.net
     port: 80
