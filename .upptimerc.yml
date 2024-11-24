@@ -15,23 +15,22 @@ sites:
     check: "tcp-ping"
     url: $MY_BWG_CA
     port: 443
-  - name: CoalcloudHK_443
-    check: "tcp-ping"
-    url: $MY_COALCLOUD_HK
-    port: 443
-  - name: BwgCA
-    url: $MY_BWG_CA
   - name: CloudconeCA
+    check: "tcp-ping"
     url: $MY_CLOUDCONE_CA
+    port: 22
   - name: OracleTokyo
     url: $MY_ORACLE_TOKYO
-  - name: CoalcloudHK
-    url: $MY_COALCLOUD_HK
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
     check: "tcp-ping"
-    ipv6: true
+    port: 22
+  - name: WawoHK
+    url: $MY_WAWO_HK
+    check: "tcp-ping"
+    port: 443
+  - name: LocvpsHK
+    url: $MY_LOCVPS_HK
+    check: "tcp-ping"
+    port: 443    
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
