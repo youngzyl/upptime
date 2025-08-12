@@ -1,7 +1,7 @@
 url: $MY_WAWO_HK
-status: down
-code: 0
-responseTime: 0
-lastUpdated: 2025-08-12T08:36:01.081Z
+status: up
+code: 200
+responseTime: 161
+lastUpdated: 2025-08-12T08:55:31.528Z
 startTime: 2024-11-24T17:55:47.113Z
 generator: Upptime <https://github.com/upptime/upptime>
